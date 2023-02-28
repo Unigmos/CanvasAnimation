@@ -6,6 +6,9 @@
     <meta name="author" content="Shaneron">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoundBall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/BoundAnm.js" async></script>
 </head>
@@ -14,6 +17,16 @@
         <canvas id="canvas"></canvas>
         <input type="button" id="start-button" value="Start">
         <input type="button" id="stop-button" value="Stop">
+        <div class="input-area">
+            <div class="x-move-box">
+                <label for="x-move">X移動量</label>
+                <input type="number" id="x-move" pattern="^[0-9]+$" value="3">
+            </div>
+            <div class="y-move-box">
+                <label for="y-move">Y移動量</label>
+                <input type="number" id="y-move" pattern="^[0-9]+$" value="5">
+            </div>
+        </div>
     </div>
 </body>
 </html>
